@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+
+/* Reset Default */
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  --cyan: hsl(179, 62%, 43%);
+  --brightYellow: hsl(71, 73%, 54%);
+  --lightGray: hsl(204, 43%, 93%);
+  --grayishBlue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  background-color: var(--lightGray);
+  place-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.introduction {
+  background-color: white;
+  border-radius: 8px 8px 0px 0px;
+  padding: 35px;
+}
+
+.introduction h1 {
+    color: var(--cyan);
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.introduction h3 {
+    color: var(--brightYellow);
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.introduction p {
+    color: var(--grayishBlue);
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.info-subscription {
+  background-color: var(--cyan);
+  padding: 35px;
+  width: 100%;
+  border-radius: 0px 0px 0px 8px;
+}
+
+.info-subscription h2 {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 18px;
+  font-family: "Karla", sans-serif;
+}
+
+.info-subscription h3 span {
+  color: var(--lightGray);
+  font-weight: 400px;
+  font-size: 16px;
+}
+
+.info-subscription h3 {
+  display: flex;
+  font-size: 30px;
+  color: white;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.info-subscription p {
+  font-size: 15px;
+  color: rgb(231, 245, 245);
+  margin-bottom: 15px;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  color: white;
+  background-color: var(--brightYellow);
+  border-radius: 8px;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.about {
+  background-color: rgb(87, 204, 204);
+  padding: 35px;
+  border-radius:  0px 0px 8px 8px;
+  width: 100%;  
+}
+
+.about h3 {
+  color: white;
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.about p {
+  line-height: 1.5;
+  color: var(--lightGray);
+}
+
+.attribution {
+  display: none;
+}
+
+/* Media Querys */
+@media screen and (min-width: 1024px) {
+  main {
+    height: 100vh;
+    font-size: 18px;
+  }
+
+  .about {
+    border-bottom-left-radius: 0px;
+    padding-left: 35px;
+    padding-right: 30px;
+  }
+
+  .twoBoxes {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    height: 100vh;
+    font-size: 16px;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .container {
+    height: 100vh;
+    padding: 20px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .info-subscription {
+    border-radius: 0;
+  }
+}
